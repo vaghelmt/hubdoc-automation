@@ -11,7 +11,7 @@
 
     <test name="functional">
         <classes>
-            <class name="tests.FirstTest"/>
+            <class name="tests.TestUploadDocument"/>
         </classes>
     </test>
 

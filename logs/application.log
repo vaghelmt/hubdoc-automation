@@ -40,3 +40,158 @@
 09.08.2020 13:54:17.674 INFO  - [App]:Home page constructor is invoked
 09.08.2020 13:54:17.682 INFO  - [App]:Home page objects are initialized successfully and constructor ends
 09.08.2020 13:54:17.770 INFO  - [BaseTest]:***************Test Case Execution Ends********************
+09.08.2020 17:21:05.979 INFO  - [BaseTest]:***************Test Case Execution Starts********************
+09.08.2020 17:21:05.980 INFO  - [BaseTest]:initWebDriver(String browser, String grid) invoked
+09.08.2020 17:21:08.019 INFO  - [BaseTest]:initWebDriver(String browser, String grid) is completed
+09.08.2020 17:21:08.020 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is invoked
+09.08.2020 17:21:08.365 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is completed
+09.08.2020 17:21:08.397 INFO  - [BasePage]:BasePage(WebDriver driver) is invoked
+09.08.2020 17:21:08.427 INFO  - [BasePage]:BasePage(WebDriver driver) is completed
+09.08.2020 17:21:08.427 INFO  - [App]:launchApp(String url) is invoked
+09.08.2020 17:21:10.437 INFO  - [App]:launchApp(String url) is completed
+09.08.2020 17:21:10.437 INFO  - [App]:Home page constructor is invoked
+09.08.2020 17:21:10.438 INFO  - [App]:Home page objects are initialized successfully and constructor ends
+09.08.2020 17:21:10.536 INFO  - [BaseTest]:***************Test Case Execution Ends********************
+09.08.2020 17:23:06.958 INFO  - [BaseTest]:***************Test Case Execution Starts********************
+09.08.2020 17:23:06.960 INFO  - [BaseTest]:initWebDriver(String browser, String grid) invoked
+09.08.2020 17:23:08.384 INFO  - [BaseTest]:initWebDriver(String browser, String grid) is completed
+09.08.2020 17:23:08.384 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is invoked
+09.08.2020 17:23:08.598 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is completed
+09.08.2020 17:23:08.611 INFO  - [BasePage]:BasePage(WebDriver driver) is invoked
+09.08.2020 17:23:08.631 INFO  - [BasePage]:BasePage(WebDriver driver) is completed
+09.08.2020 17:23:08.631 INFO  - [App]:launchApp(String url) is invoked
+09.08.2020 17:23:10.293 INFO  - [App]:launchApp(String url) is completed
+09.08.2020 17:23:10.293 INFO  - [App]:Home page constructor is invoked
+09.08.2020 17:23:10.293 INFO  - [App]:Home page objects are initialized successfully and constructor ends
+09.08.2020 17:23:12.429 INFO  - [BasePage]:BasePage() is invoked and there is nothing logic to handle here
+09.08.2020 17:23:12.529 INFO  - [BaseTest]:***************Test Case Execution Ends********************
+09.08.2020 17:30:29.823 INFO  - [BaseTest]:***************Test Case Execution Starts********************
+09.08.2020 17:30:29.825 INFO  - [BaseTest]:initWebDriver(String browser, String grid) invoked
+09.08.2020 17:30:31.454 INFO  - [BaseTest]:initWebDriver(String browser, String grid) is completed
+09.08.2020 17:30:31.454 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is invoked
+09.08.2020 17:30:31.696 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is completed
+09.08.2020 17:30:31.720 INFO  - [BasePage]:BasePage(WebDriver driver) is invoked
+09.08.2020 17:30:31.750 INFO  - [BasePage]:BasePage(WebDriver driver) is completed
+09.08.2020 17:30:31.750 INFO  - [App]:launchApp(String url) is invoked
+09.08.2020 17:30:34.147 INFO  - [App]:launchApp(String url) is completed
+09.08.2020 17:30:34.148 INFO  - [App]:Home page constructor is invoked
+09.08.2020 17:30:34.148 INFO  - [App]:Home page objects are initialized successfully and constructor ends
+09.08.2020 17:30:38.283 INFO  - [BasePage]:BasePage() is invoked and there is nothing logic to handle here
+09.08.2020 17:30:38.394 INFO  - [BaseTest]:***************Test Case Execution Ends********************
+09.08.2020 17:32:24.936 INFO  - [BaseTest]:***************Test Case Execution Starts********************
+09.08.2020 17:32:24.937 INFO  - [BaseTest]:initWebDriver(String browser, String grid) invoked
+09.08.2020 17:32:26.399 INFO  - [BaseTest]:initWebDriver(String browser, String grid) is completed
+09.08.2020 17:32:26.400 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is invoked
+09.08.2020 17:32:26.744 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is completed
+09.08.2020 17:32:26.767 INFO  - [BasePage]:BasePage(WebDriver driver) is invoked
+09.08.2020 17:32:26.796 INFO  - [BasePage]:BasePage(WebDriver driver) is completed
+09.08.2020 17:32:26.797 INFO  - [App]:launchApp(String url) is invoked
+09.08.2020 17:32:28.468 INFO  - [App]:launchApp(String url) is completed
+09.08.2020 17:32:28.468 INFO  - [App]:Home page constructor is invoked
+09.08.2020 17:32:28.468 INFO  - [App]:Home page objects are initialized successfully and constructor ends
+09.08.2020 17:32:30.856 INFO  - [BasePage]:BasePage() is invoked and there is nothing logic to handle here
+09.08.2020 17:32:30.961 INFO  - [BaseTest]:***************Test Case Execution Ends********************
+09.08.2020 17:33:56.232 INFO  - [BaseTest]:***************Test Case Execution Starts********************
+09.08.2020 17:33:56.233 INFO  - [BaseTest]:initWebDriver(String browser, String grid) invoked
+09.08.2020 17:33:57.772 INFO  - [BaseTest]:initWebDriver(String browser, String grid) is completed
+09.08.2020 17:33:57.772 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is invoked
+09.08.2020 17:33:57.973 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is completed
+09.08.2020 17:33:57.988 INFO  - [BasePage]:BasePage(WebDriver driver) is invoked
+09.08.2020 17:33:58.012 INFO  - [BasePage]:BasePage(WebDriver driver) is completed
+09.08.2020 17:33:58.012 INFO  - [App]:launchApp(String url) is invoked
+09.08.2020 17:34:00.049 INFO  - [App]:launchApp(String url) is completed
+09.08.2020 17:34:00.050 INFO  - [App]:Home page constructor is invoked
+09.08.2020 17:34:00.050 INFO  - [App]:Home page objects are initialized successfully and constructor ends
+09.08.2020 17:34:03.459 INFO  - [BasePage]:BasePage() is invoked and there is nothing logic to handle here
+09.08.2020 17:34:03.555 INFO  - [BaseTest]:***************Test Case Execution Ends********************
+09.08.2020 17:35:10.674 INFO  - [BaseTest]:***************Test Case Execution Starts********************
+09.08.2020 17:35:10.675 INFO  - [BaseTest]:initWebDriver(String browser, String grid) invoked
+09.08.2020 17:35:11.982 INFO  - [BaseTest]:initWebDriver(String browser, String grid) is completed
+09.08.2020 17:35:11.982 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is invoked
+09.08.2020 17:35:12.140 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is completed
+09.08.2020 17:35:12.214 INFO  - [BasePage]:BasePage(WebDriver driver) is invoked
+09.08.2020 17:35:12.246 INFO  - [BasePage]:BasePage(WebDriver driver) is completed
+09.08.2020 17:35:12.246 INFO  - [App]:launchApp(String url) is invoked
+09.08.2020 17:35:14.138 INFO  - [App]:launchApp(String url) is completed
+09.08.2020 17:35:14.138 INFO  - [App]:Home page constructor is invoked
+09.08.2020 17:35:14.138 INFO  - [App]:Home page objects are initialized successfully and constructor ends
+09.08.2020 17:35:58.560 INFO  - [BasePage]:BasePage() is invoked and there is nothing logic to handle here
+09.08.2020 17:35:58.672 INFO  - [BaseTest]:***************Test Case Execution Ends********************
+09.08.2020 17:36:31.638 INFO  - [BaseTest]:***************Test Case Execution Starts********************
+09.08.2020 17:36:31.639 INFO  - [BaseTest]:initWebDriver(String browser, String grid) invoked
+09.08.2020 17:36:32.899 INFO  - [BaseTest]:initWebDriver(String browser, String grid) is completed
+09.08.2020 17:36:32.899 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is invoked
+09.08.2020 17:36:33.053 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is completed
+09.08.2020 17:36:33.072 INFO  - [BasePage]:BasePage(WebDriver driver) is invoked
+09.08.2020 17:36:33.092 INFO  - [BasePage]:BasePage(WebDriver driver) is completed
+09.08.2020 17:36:33.092 INFO  - [App]:launchApp(String url) is invoked
+09.08.2020 17:36:34.970 INFO  - [App]:launchApp(String url) is completed
+09.08.2020 17:36:34.971 INFO  - [App]:Home page constructor is invoked
+09.08.2020 17:36:34.971 INFO  - [App]:Home page objects are initialized successfully and constructor ends
+09.08.2020 17:36:46.295 INFO  - [BasePage]:BasePage() is invoked and there is nothing logic to handle here
+09.08.2020 17:36:46.511 INFO  - [BaseTest]:***************Test Case Execution Ends********************
+09.08.2020 17:37:21.374 INFO  - [BaseTest]:***************Test Case Execution Starts********************
+09.08.2020 17:37:21.375 INFO  - [BaseTest]:initWebDriver(String browser, String grid) invoked
+09.08.2020 17:37:22.577 INFO  - [BaseTest]:initWebDriver(String browser, String grid) is completed
+09.08.2020 17:37:22.577 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is invoked
+09.08.2020 17:37:22.734 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is completed
+09.08.2020 17:37:22.749 INFO  - [BasePage]:BasePage(WebDriver driver) is invoked
+09.08.2020 17:37:22.770 INFO  - [BasePage]:BasePage(WebDriver driver) is completed
+09.08.2020 17:37:22.771 INFO  - [App]:launchApp(String url) is invoked
+09.08.2020 17:37:24.533 INFO  - [App]:launchApp(String url) is completed
+09.08.2020 17:37:24.533 INFO  - [App]:Home page constructor is invoked
+09.08.2020 17:37:24.533 INFO  - [App]:Home page objects are initialized successfully and constructor ends
+09.08.2020 17:37:35.397 INFO  - [BasePage]:BasePage() is invoked and there is nothing logic to handle here
+09.08.2020 17:40:38.120 INFO  - [BaseTest]:***************Test Case Execution Ends********************
+09.08.2020 17:41:54.406 INFO  - [BaseTest]:***************Test Case Execution Starts********************
+09.08.2020 17:41:54.407 INFO  - [BaseTest]:initWebDriver(String browser, String grid) invoked
+09.08.2020 17:41:55.847 INFO  - [BaseTest]:initWebDriver(String browser, String grid) is completed
+09.08.2020 17:41:55.848 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is invoked
+09.08.2020 17:41:56.032 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is completed
+09.08.2020 17:41:56.044 INFO  - [BasePage]:BasePage(WebDriver driver) is invoked
+09.08.2020 17:41:56.068 INFO  - [BasePage]:BasePage(WebDriver driver) is completed
+09.08.2020 17:41:56.068 INFO  - [App]:launchApp(String url) is invoked
+09.08.2020 17:41:58.041 INFO  - [App]:launchApp(String url) is completed
+09.08.2020 17:41:58.041 INFO  - [App]:Home page constructor is invoked
+09.08.2020 17:41:58.041 INFO  - [App]:Home page objects are initialized successfully and constructor ends
+09.08.2020 17:42:00.261 INFO  - [BasePage]:BasePage() is invoked and there is nothing logic to handle here
+09.08.2020 17:42:02.388 INFO  - [BaseTest]:***************Test Case Execution Ends********************
+09.08.2020 18:14:58.439 INFO  - [BaseTest]:***************Test Case Execution Starts********************
+09.08.2020 18:14:58.440 INFO  - [BaseTest]:initWebDriver(String browser, String grid) invoked
+09.08.2020 18:15:00.472 INFO  - [BaseTest]:initWebDriver(String browser, String grid) is completed
+09.08.2020 18:15:00.472 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is invoked
+09.08.2020 18:15:00.643 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is completed
+09.08.2020 18:15:00.679 INFO  - [BasePage]:BasePage(WebDriver driver) is invoked
+09.08.2020 18:15:00.714 INFO  - [BasePage]:BasePage(WebDriver driver) is completed
+09.08.2020 18:15:00.714 INFO  - [App]:launchApp(String url) is invoked
+09.08.2020 18:15:02.709 INFO  - [App]:launchApp(String url) is completed
+09.08.2020 18:15:02.709 INFO  - [App]:Home page constructor is invoked
+09.08.2020 18:15:02.709 INFO  - [App]:Home page objects are initialized successfully and constructor ends
+09.08.2020 18:15:04.916 INFO  - [BasePage]:BasePage() is invoked and there is nothing logic to handle here
+09.08.2020 18:15:08.856 INFO  - [BaseTest]:***************Test Case Execution Ends********************
+09.08.2020 18:15:23.617 INFO  - [BaseTest]:***************Test Case Execution Starts********************
+09.08.2020 18:15:23.618 INFO  - [BaseTest]:initWebDriver(String browser, String grid) invoked
+09.08.2020 18:15:25.046 INFO  - [BaseTest]:initWebDriver(String browser, String grid) is completed
+09.08.2020 18:15:25.047 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is invoked
+09.08.2020 18:15:25.180 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is completed
+09.08.2020 18:15:25.194 INFO  - [BasePage]:BasePage(WebDriver driver) is invoked
+09.08.2020 18:15:25.220 INFO  - [BasePage]:BasePage(WebDriver driver) is completed
+09.08.2020 18:15:25.222 INFO  - [App]:launchApp(String url) is invoked
+09.08.2020 18:15:27.279 INFO  - [App]:launchApp(String url) is completed
+09.08.2020 18:15:27.279 INFO  - [App]:Home page constructor is invoked
+09.08.2020 18:15:27.279 INFO  - [App]:Home page objects are initialized successfully and constructor ends
+09.08.2020 18:15:29.186 INFO  - [BasePage]:BasePage() is invoked and there is nothing logic to handle here
+09.08.2020 18:15:32.893 INFO  - [BaseTest]:***************Test Case Execution Ends********************
+09.08.2020 18:16:40.114 INFO  - [BaseTest]:***************Test Case Execution Starts********************
+09.08.2020 18:16:40.115 INFO  - [BaseTest]:initWebDriver(String browser, String grid) invoked
+09.08.2020 18:16:41.432 INFO  - [BaseTest]:initWebDriver(String browser, String grid) is completed
+09.08.2020 18:16:41.432 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is invoked
+09.08.2020 18:16:41.593 INFO  - [BaseTest]:configureDriver(int implicitWait, int explicitWait) is completed
+09.08.2020 18:16:41.608 INFO  - [BasePage]:BasePage(WebDriver driver) is invoked
+09.08.2020 18:16:41.630 INFO  - [BasePage]:BasePage(WebDriver driver) is completed
+09.08.2020 18:16:41.630 INFO  - [App]:launchApp(String url) is invoked
+09.08.2020 18:16:43.182 INFO  - [App]:launchApp(String url) is completed
+09.08.2020 18:16:43.182 INFO  - [App]:Home page constructor is invoked
+09.08.2020 18:16:43.182 INFO  - [App]:Home page objects are initialized successfully and constructor ends
+09.08.2020 18:16:45.371 INFO  - [BasePage]:BasePage() is invoked and there is nothing logic to handle here
+09.08.2020 18:22:08.329 INFO  - [BaseTest]:***************Test Case Execution Ends********************

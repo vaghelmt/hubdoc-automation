@@ -17,8 +17,8 @@ public class BasePage {
 
     private static final Logger log = Logger.getLogger(BasePage.class);
 
-    public WebDriver driver;
-    public WebDriverWait wait;
+    public static WebDriver driver;
+    public static WebDriverWait wait;
 
     public String appURL;
     public Properties prop = new Properties();
@@ -49,7 +49,7 @@ public class BasePage {
 
     public BasePage() {
         log.info("BasePage() is invoked and there is nothing logic to handle here");
-        // TODO Auto-generated constructor stub
+        PageFactory.initElements(driver, this);
     }
 
 }
