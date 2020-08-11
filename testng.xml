@@ -11,7 +11,10 @@
 
     <test name="functional">
         <classes>
-            <class name="tests.TestUploadDocument"/>
+<!--            <class name="tests.TestUploadDocument"/>-->
+            <class name="tests.TestExtraction"/>
+            <class name="tests.TestSearchRecords"/>
+
         </classes>
     </test>
 

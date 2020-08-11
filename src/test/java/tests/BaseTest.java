@@ -1,28 +1,33 @@
 package tests;
 
+import java.awt.*;
 import java.util.concurrent.TimeUnit;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
+import pages.App;
+import pages.HomePage;
 
 public class BaseTest {
     private static final Logger log = Logger.getLogger(BaseTest.class);
 
+    public App hubdocApp;
+    public HomePage homePage;
+
     public WebDriver driver;
     public WebDriverWait wait;
 
+
+
     @BeforeSuite
-    public void beforeSuiteSetUp() {
-        //report will here
+    public void beforeSuiteSetUp() throws AWTException {
+
     }
 
     @AfterSuite
@@ -30,17 +35,19 @@ public class BaseTest {
 
     }
 
-    @BeforeTest
+    @BeforeMethod
     @Parameters({ "browser", "implicitWait", "explicitWait","secretKey" })
-    public void beforeTestRun(String browser,int implicitWait, int explicitWait, String secretKey) {
+    public void beforeMethodRun(String browser,int implicitWait, int explicitWait, String secretKey) {
         log.info("***************Test Case Execution Starts********************");
         initWebDriver(browser);
         configureDriver(implicitWait, explicitWait);
+        hubdocApp = new App(driver);
+        homePage = hubdocApp.login();
 
     }
 
-    @AfterTest
-    public void afterTestRun() {
+    @AfterMethod
+    public void afterMethodRun() {
         closeWebDriver();
         log.info("***************Test Case Execution Ends********************");
     }
@@ -53,14 +60,17 @@ public class BaseTest {
         try {
             switch (browser) {
                 case "chrome":
+                    WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
                     break;
 
                 case "firefox":
+                    WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
                     break;
 
                 case "IE":
+                    WebDriverManager.iedriver().setup();
                     driver = new InternetExplorerDriver();
                 default:
                     break;
