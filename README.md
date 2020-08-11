@@ -25,7 +25,7 @@ Note: Please note that this framework doesnot support parallel execution at this
 
 PLease follow these steps to set up download and run the tests on your machine:
 
-1. Clone the project using this command - git clone ""
+1. Clone the project using this command - git clone "https://github.com/vaghelmt/hubdoc-automation.git"
 2. Change the directory using this command - cd hubdoc-automation
 3. Update the config.properties file user src/test/resources folder with username and password
 4. Execute this command - mvn test
