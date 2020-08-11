@@ -1,9 +1,11 @@
 # hubdoc-automation
 
-##Project Description
+## Project Description
+
 This repo incorporates end to end automated tests for important hubdoc user flows
 
-##Tech Stack
+## Tech Stack
+
 It uses Selenium WebDriver with Java bindings to automate the application. It makes use of AutoIT to handle Windows Explorer during file upload.
 
 I have used testNG framework to structure the tests and Maven for building and packaging the project.
@@ -14,9 +16,10 @@ The project includes WebDriverManager so there is no need to manage the driver e
 
 Note: Please note that this framework doesnot support parallel execution at this point. The support might be added in future.
 
-##How to use
+## How to use
 
-###Prequisites
+### Prequisites
+
 1. Maven installed on the machine where you are planning to run the tests
 2. Access to hubdoc website. If you do not have the access, please go to the site - https://app.hubdoc.com/login - and create a new account.
 
