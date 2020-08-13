@@ -35,7 +35,8 @@ PLease follow these steps to download and run the tests on your machine through 
 3. Update the config.properties file under src/test/resources folder with username and password
 4. In the same file, also update the browser and implicit/explicit wait properties
 4. Execute this command - mvn test
-5. The result file will be generated under target/surefire-reports directory. You can either open index.html or emailable-report.html to view the results
+5. The default result file will be generated under target/surefire-reports directory. You can either open index.html or emailable-report.html to view the results
+6. In addition, Extent Report will also be generated with the name ExtentReportResults.html in the root directory
 
 Tip: If you want to run the tests in a CI/CD pipeline, create a Jenkins free-style job and select execution environment as shell. After that use the same command as above and you will have your jenkins job is almost ready. Next, you need to create a dependency with the hubdoc application job and then whenever there is a new hubdoc build available, these tests will run automatically.
 
@@ -51,6 +52,8 @@ PLease follow these steps to set up and run the tests on your eclipse:
 7. In the same file, also update the browser and implicit/explicit wait properties
 8. Right click one the project root and select run -> maven test
 9. Alternatively, right click on testng.xml and run as TestNG
+10.Extent Report will also be generated with the name ExtentReportResults.html in the root directory
+
 
 #### IntelliJ
 PLease follow these steps to set up and run the tests on your intelliJ:
@@ -64,6 +67,8 @@ PLease follow these steps to set up and run the tests on your intelliJ:
 7. Update the config.properties file under src/test/resources folder with username and password
 8. In the same file, also update the browser and implicit/explicit wait properties
 9. On the right hand side panel, click on maven, expand the LifeCycle folder and click test
+10.Extent Report will also be generated with the name ExtentReportResults.html in the root directory
+
 
 If you have any queries or suggestions, please reach out to me at mitul.vaghela@gmail.com. If you would like to contribute to this project, please raise a PR.
 
