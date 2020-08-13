@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This repo incorporates end to end automated tests for important hubdoc user flows
+This repo incorporates end to end automated tests for important hubdoc user flows. At this point, limited number of test cases are automated. You can find all the test cases documented here - https://docs.google.com/spreadsheets/d/1N48AKhEXfMMU5Ut0cO15cTW-zkertenoR3tQ_OkeKqU/edit?usp=sharing
 
 ## Tech Stack
 
