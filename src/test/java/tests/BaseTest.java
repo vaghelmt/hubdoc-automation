@@ -1,6 +1,6 @@
 package tests;
 
-import java.awt.*;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -10,10 +10,23 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 import pages.App;
 import pages.HomePage;
+import reporters.ExtentReporter;
+import utilities.Utils;
 
+/**
+ * This is a Base Test class that is expected to be extended
+ * by all the test classes.
+ * It takes care of environment set up and tear down
+ * It also takes care of test configurations
+ *
+ * @author  Mitul Vaghela
+ * @version 1.0
+ * @since   2020-08-10
+ */
 public class BaseTest {
     private static final Logger log = Logger.getLogger(BaseTest.class);
 
@@ -23,10 +36,15 @@ public class BaseTest {
     public WebDriver driver;
     public WebDriverWait wait;
 
+    public static Properties prop;
+
+    public static String testDataDirectory;
 
 
     @BeforeSuite
-    public void beforeSuiteSetUp() throws AWTException {
+    public void beforeSuiteSetUp() {
+        prop = Utils.loadProperties();
+        initResourcesAndUtilities();
 
     }
 
@@ -35,19 +53,28 @@ public class BaseTest {
 
     }
 
+
     @BeforeMethod
-    @Parameters({ "browser", "implicitWait", "explicitWait","secretKey" })
-    public void beforeMethodRun(String browser,int implicitWait, int explicitWait, String secretKey) {
+    public void beforeMethodRun() {
         log.info("***************Test Case Execution Starts********************");
-        initWebDriver(browser);
-        configureDriver(implicitWait, explicitWait);
+        //loading properties file
+//        prop = Utils.loadProperties();
+//        initResourcesAndUtilities();
+        initWebDriver(prop.getProperty("browser"));
+        configureDriver(prop.getProperty("implicitWait"), prop.getProperty("explicitWait"));
+        ExtentReporter.assignDriver(driver);
         hubdocApp = new App(driver);
         homePage = hubdocApp.login();
 
     }
 
+    private void initResourcesAndUtilities() {
+        testDataDirectory = prop.getProperty("TestDataDirectory");
+        Utils.initUtilities(prop);
+    }
+
     @AfterMethod
-    public void afterMethodRun() {
+    public void afterMethodRun(ITestResult result) {
         closeWebDriver();
         log.info("***************Test Case Execution Ends********************");
     }
@@ -56,7 +83,6 @@ public class BaseTest {
         /**
          * Initialize webdriver as per configuration file
          */
-        log.info("initWebDriver(String browser, String grid) invoked");
         try {
             switch (browser) {
                 case "chrome":
@@ -75,22 +101,18 @@ public class BaseTest {
                 default:
                     break;
             }
-            log.info("initWebDriver(String browser, String grid) is completed");
+            log.info("Driver initialization is completed");
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 
-    private void configureDriver(int implicitWait, int explicitWait) {
-
-        log.info("configureDriver(int implicitWait, int explicitWait) is invoked");
+    private void configureDriver(String implicitWait, String explicitWait) {
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(implicitWait, TimeUnit.SECONDS);
-        wait = new WebDriverWait(driver, explicitWait);
-        log.info("configureDriver(int implicitWait, int explicitWait) is completed");
+        driver.manage().timeouts().implicitlyWait(Integer.parseInt(implicitWait), TimeUnit.SECONDS);
+        wait = new WebDriverWait(driver, Integer.parseInt(explicitWait));
+        log.info("Driver configuration is completed");
     }
-
 
     private void closeWebDriver() {
         driver.quit();

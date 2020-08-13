@@ -12,3 +12,6 @@ buildNumber.properties
 .iml
 .idea
 output/
+screenshots/
+ExtentReportResults.html
+logs/

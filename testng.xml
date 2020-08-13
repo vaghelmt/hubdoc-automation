@@ -3,18 +3,15 @@
 
 <suite name="Suite">
 
-    <parameter name="browser" value="chrome"/>
-    <parameter name="implicitWait" value="60"/>
-    <parameter name="explicitWait" value="60"/>
-    <parameter name="secretKey" value="donotspillthesecret!"/>
-
+    <listeners>
+        <listener class-name="reporters.ExtentReporter" />
+    </listeners>
 
     <test name="functional">
         <classes>
-<!--            <class name="tests.TestUploadDocument"/>-->
             <class name="tests.TestExtraction"/>
+            <class name="tests.TestUploadAndDeleteOperations"/>
             <class name="tests.TestSearchRecords"/>
-
         </classes>
     </test>
 

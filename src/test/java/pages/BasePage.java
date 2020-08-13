@@ -12,7 +12,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utilities.Utils;
 
+/**
+ * This is Base page class that is expected to be extended
+ * by all the page classes.
+ * It takes care of object initialization for all the child pages
+ *
+ *
+ * @author  Mitul Vaghela
+ * @version 1.0
+ * @since   2020-08-10
+ */
 
 public class BasePage {
 
@@ -32,20 +43,16 @@ public class BasePage {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, 20);
 
+        //instantiate robot class here so that all the pages can use key and mouse strokes when required
         try {
             robot = new Robot();
         } catch (AWTException e) {
             e.printStackTrace();
         }
 
-        try (InputStream input = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/config.properties")) {
-            // load a properties file
-            prop.load(input);
-            appURL = prop.getProperty("url");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-
+        //loading the configurations
+        prop = Utils.loadProperties();
+        appURL = prop.getProperty("url");
         PageFactory.initElements(driver, this);
 
         log.info("BasePage(WebDriver driver) is completed");
@@ -53,7 +60,6 @@ public class BasePage {
 
 
     public BasePage() {
-        log.info("BasePage() is invoked and there is nothing logic to handle here");
         PageFactory.initElements(driver, this);
     }
 

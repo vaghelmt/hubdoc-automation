@@ -7,6 +7,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.awt.*;
 
+/**
+ * This is a page class that represent the upload document modal
+ * in hubdoc application
+ *
+ * @author  Mitul Vaghela
+ * @version 1.0
+ * @since   2020-08-10
+ */
 public class uploadDocumentModal extends BasePage {
 
     @FindBy(id = "uploadifive-file-upload")

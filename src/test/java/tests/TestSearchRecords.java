@@ -13,16 +13,31 @@ import java.util.stream.Collectors;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
+/**
+ * This class covers two test cases that tests Simple and
+ * Advanced search features
+ *
+ * @author  Mitul Vaghela
+ * @version 1.0
+ * @since   2020-08-10
+ */
 public class TestSearchRecords extends BaseTest {
     public AdvancedSearch advancedSearch;
 
-    @Test
+    @Test(description = "User is able to search documents by the name using the global search bar")
     public void simpleSearch_searchUsingDocumentName() {
         homePage.simpleSearch("Waterview");
         assertThat(homePage.getListOfUploadedDocuments(),everyItem(containsString("Waterview")));
     }
 
-    @Test()
+    @Test(description = "User is able to search documents by the amount using the global search bar")
+    public void simpleSearch_searchUsingAmount() {
+        homePage.simpleSearch("81.48");
+        assertThat(homePage.getListOfAmountOfAllDocuments(),everyItem(containsString("81.48")));
+    }
+
+    @Test(description = "User is able to do an advanced fine grained search" +
+            "on documents by using multiple filters and relational operators")
     public void advancedSearch_searchUsingDateAndAmount() {
         advancedSearch = homePage.openAdvancedSearch();
         advancedSearch.setDateFilter(DateFilters.This_month, "Upload Date")

@@ -10,6 +10,13 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+/**
+ * This is a page class that represent Home Page of hubdoc
+ *
+ * @author  Mitul Vaghela
+ * @version 1.0
+ * @since   2020-08-10
+ */
 public class HomePage extends BasePage {
 
     @FindBy(id = "add-receipt")
@@ -30,6 +37,9 @@ public class HomePage extends BasePage {
     @FindBy(css = ".modal-footer .ok")
     WebElement btConfirmDelete;
 
+    @FindBy(css = "#document-preview-content-hook p")
+    WebElement unsupportedFileMessage;
+
     By tbSearchBar = By.cssSelector("#search input");
 
     By btAdvancedSearch = By.id("advanced-search-button");
@@ -48,6 +58,10 @@ public class HomePage extends BasePage {
                 .map(WebElement::getText)
                 .collect(Collectors.toList());
 
+    }
+
+    public String getUnsupportedFileMessage(){
+        return unsupportedFileMessage.getText();
     }
 
     public void deleteAFile(String fileName) {
