@@ -14,6 +14,8 @@ For validations, I have used Hamcrest Matchers which in my opinion provides very
 
 The project includes WebDriverManager so there is no need to manage the driver executables seperately. Depending upon your the version of browsers on your system, it will automatically download the drivers.
 
+For reporting, this framework uses Extent Reports inaddition to the default maven surefire reports
+
 Note: Please note that this framework doesnot support parallel execution at this point. The support might be added in future.
 
 ## How to use
